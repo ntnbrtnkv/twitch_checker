@@ -1,0 +1,6 @@
+opencv-python
+Pillow
+python-telegram-bot
+numpy
+streamlink
+python-dotenv
