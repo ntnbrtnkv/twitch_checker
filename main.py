@@ -1,9 +1,10 @@
 import logging
-import sys
 import os
 import shutil
+import sys
 
 from dotenv import load_dotenv
+
 load_dotenv()
 from bot import Bot
 from twitch import Twitch
@@ -19,4 +20,3 @@ os.mkdir(OUT_FOLDER)
 twitch = Twitch(OUT_FOLDER)
 bot = Bot(OUT_FOLDER, twitch)
 bot.run()
-

@@ -8,6 +8,7 @@ logger = logging.getLogger('telegram-bot')
 TOKEN = os.getenv('TELEGRAM_TOKEN')
 INTERVAL = int(os.getenv('BOT_INTERVAL'))
 
+
 class Bot:
     def __init__(self, out_folder, twitch):
         self.out_folder = out_folder

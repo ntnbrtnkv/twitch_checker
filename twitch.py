@@ -1,7 +1,7 @@
 import logging
-import time
-import threading
 import os
+import threading
+import time
 
 import cv2
 import numpy as np
@@ -91,7 +91,8 @@ class Twitch:
             logger.debug(f'Stream {channel} is down')
         else:
             logger.debug(f'Finding template {template}')
-            self.find_template(data, os.path.join(TEMPLATE_FOLDER, f'{template}.png'), os.path.join(self.out_folder, channel, f'{template}.png'))
+            self.find_template(data, os.path.join(TEMPLATE_FOLDER, f'{template}.png'),
+                               os.path.join(self.out_folder, channel, f'{template}.png'))
 
     def job_name(self, channel, template):
         return f'{channel}:{template}'
